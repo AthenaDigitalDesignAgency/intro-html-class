@@ -1,0 +1,38 @@
+in 7-1.html
+	- make the p tag into an ordered list
+		- leverage multiple cursors and control + right to get to the end
+
+	- Display an image that when clicked will link to itself and will display the image in the browser by itself
+
+	- Create a link at the top of the page that when clicked will jump all the way to the bottom of the page. At the bottom of the page there should be a link to jump back to the top of the page. 
+
+in 7-2.html
+	- put in images for all the table rows
+	- make a class to set the size for the images and add the class to all the images
+	- center it
+	- convert to a datatable
+		- refer to 5-2.html if you need help
+
+in 7-3.html
+	- using an id, style that empty div on the page.
+		- Make it 200 px tall and 200px wide
+		- Give it a background color of yellow
+		- make the border 4 px black
+
+	- include a div inside of the div 
+	- make it 50 px by 50px, with a background of red
+	and absolutely position it inside of the other div so that it's in the bottom corner
+
+	- then add in 3 more squares to each of the other corners
+
+
+Wordpress - sign up to it
+	- get used to it a little.
+
+Git:
+	- try again
+
+
+Last Thing:
+	As a class install wordpress together:
+		https://codex.wordpress.org/Installing_WordPress_Locally_on_Your_Mac_With_MAMP
