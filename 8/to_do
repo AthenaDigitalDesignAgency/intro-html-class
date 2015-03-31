@@ -1,0 +1,34 @@
+1. We will be following this guide to install Wordpress and MAMP. You need MAMP to run wordpress locally. The reason why we're running wordpress locally is because, you will be able to customize it anyway you want. On wordpress.com you can't do that unless you pay a monthly fee. Most sites on the internet install wordpress on their servers by themselves.  
+	https://codex.wordpress.org/Installing_WordPress_Locally_on_Your_Mac_With_MAMP
+
+
+1.5. If you're waiting for people to finish
+	In 8-1.html, I want you to make a button group with 4 buttons and put a different glyphicon in each button.
+
+	- Code documentation is here: http://getbootstrap.com/components/
+
+1.75 If you're still waiting for people to finish
+	Please put an image slideshow into 8-1.html of 3 pictures that you find off the internet
+
+	Code Documentation here: http://getbootstrap.com/javascript/#carousel
+
+2. Talk to Class about MAMP
+	- mamp stands for My Apache, MySQL and PHP
+		- Apache is a freely available web server 
+			- around 50% of the web uses Apache
+			- web servers like Apache help deliver content to the browser
+		- MySQL is a database 
+			- think of it as excel sheets that are easily accessible for a website
+		- PHP is a programming language that is used by Wordpress
+			- you need it to get Wordpress to run
+
+3. Talk to the class about themes
+
+4. Talk to class about the structure of themes
+
+5. Go into the footer and explain the php 
+	- show how to update it
+
+6. Have class update the footer file and make it their own 
+
+7. Talk to class about plugins
