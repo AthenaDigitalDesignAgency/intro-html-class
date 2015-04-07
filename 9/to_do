@@ -1,0 +1,17 @@
+- git is a source code manager 
+
+mkdir test-git
+	- make a directory
+
+git init
+	- short for initialize
+	- it makes a .git folder in your folder
+		- everything about our git repository stays in here
+
+touch README.md
+ 	- this makes your readme file 
+ 	- it's what gets displayed at the bottom of your github repository
+ 	- it uses a document type called mark down
+ 	- use this tool to help you write markdown
+	 	- https://stackedit.io/editor
+
