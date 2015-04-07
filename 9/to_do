@@ -1,17 +1,220 @@
-- git is a source code manager 
+General
+	- git is a source code manager 
+	- github.com gives a visual aspect to git, makes it social, acts as a code search engine and allows for you to store your git repository on their servers so it can be shared with other developers and so you're not tied to a computer to code
 
-mkdir test-git
-	- make a directory
 
-git init
-	- short for initialize
-	- it makes a .git folder in your folder
-		- everything about our git repository stays in here
+Tracking Files
+	mkdir test-git
+		- make a directory
 
-touch README.md
- 	- this makes your readme file 
- 	- it's what gets displayed at the bottom of your github repository
- 	- it uses a document type called mark down
- 	- use this tool to help you write markdown
-	 	- https://stackedit.io/editor
+	git init
+		- short for initialize
+		- it makes a .git folder in your folder
+			- everything about our git repository stays in here
 
+	touch README.md
+	 	- this makes your readme file 
+	 	- it's what gets displayed at the bottom of your github repository
+	 	- it uses a document type called mark down
+	 	- use this tool to help you write markdown
+		 	- https://stackedit.io/editor
+
+	git status
+		- shows the status of the repository
+		- shows the tracked files and the untracked files
+
+	git add README.md
+		- this adds the README.md file to the staging area
+		- this is like packaging a product and putting it in the loading dock - you haven't shipped it yet - but you're saying - it's going to get shipped with the next set of products.
+
+		other useful commands:
+			git add . 
+				- adds everything
+
+			git rm filename
+				- removes the file from staging
+
+	Let's add some text to the README.md file 
+		
+	Now let's check the status of the git repository
+		Now we see that there is: "changes to be commited"
+			- this is our original README.md file that we added
+		And we see: "changes not staged for commit"
+			- this is our README.md file with the modified change
+
+	Now let's make a new file 
+		touch 9-1.html
+
+	If we check git status
+		- we see it under Untracked files
+			- we see it there because we haven't packaged and loaded it into the loading dock (git add <filename>)
+
+	git add README.md
+	git status
+		- now we see that the "changes not staged for commit" category is gone
+		- because we added the changes to README.md to the "changes to be commited" category
+
+
+	1. As a class add 9-1.html to the "changes to be commited" category
+
+
+Commiting (shipping changes or new files)
+	git status
+		you see there are two files that you're tracking, it's time to ship them
+
+	git commit -m 'first commit'	
+		- tells git to track README.md
+
+	git status
+		-it says "working directory is clean"
+			- no changes have been made since the last commit 
+
+	touch new_file.txt
+	- open README.md and edit it 
+	git status
+		- you'll see new_file.txt is an untracked file and you'll see that README.md was modified
+		- If you only want to commit files that you have already started tracking you can do "git add README.md" and then "git commit -m 'changed tracked file', but what if you have a lot of files that you edited that were already tracked?
+
+		- you can do:
+			git commit -a -m 'changed already tracked files'
+
+
+Ignoring files
+	touch .DS_Store
+	mkdir tmp 
+	cd tmp 
+	touch test.txt 
+	cd .. 
+
+	- we don't want to track the .DS_Store files and the tmp directory.
+	- we could ignore them - but that would be annoying because we can't use "git add ."
+	- we can make it so git ignores them
+
+		touch .gitignore
+		- open up .gitignore
+
+		- on each line include the file or folder you want to ignore
+			.DS_Store
+			test
+
+		- you can include rules like 
+			test/*.txt
+				- ignore all txt files in the test folder
+			!test/this_one.txt
+				- but don't ignore this particular txt file in the test folder
+
+		git status
+			- you'll see that those files are gone
+
+	2. Everyone commit your gitignore file 
+
+	3. Everyone I want you to put in a rule in your .gitignore file so that it ignores all files with an extension .csv 
+	4. Everyone commmit your .gitignore file
+
+
+Git isn't the only version control system out there
+	- Subversion (svn)
+	- Mercurial
+	- Bazaar
+
+	- distributed
+		- you don't just get a copy of the code
+		- you get the entire repository
+			- so you can see where the code was at a month ago, a week ago, or last year
+				- because of the commits people made in it
+
+	- staging area
+		- let's you pick what you want to commit and track
+
+	- repository
+		- the git cycle of life:
+			you make changes, you stage them and you commit them
+
+
+Git Log
+	git log 
+		- shows you a history of the commits
+		- you can hit j and k to scroll
+		- you can hit q to get out
+
+	git log --stat
+		- see how many lines were changed
+		- see how many lines were added based on the + sign
+		- see how many lines were subtracted based on the - sign
+
+	git log --oneline
+		git diff <hash> README.md 
+			- you can see if that particular file has changed since that particular commit
+
+	git log --graph
+		- good for when you have a lot of branches and working with others.
+
+	- you can combine the flags 
+
+	gitk
+		- brings up a gui
+
+Branches
+	- you start off with a master branch of your code
+		- you can have branches off of your master branch
+			- branches let you modify code and test that code
+				- you can merge a branch into your master branch if you feel it's ready
+
+				- this is how multiple people can work on the same github repository without running over each other's code
+
+				- pavan works on a branch
+				- lisa works on a branch
+				- hannah works on a branch
+	git status
+		- you see "on branch master"
+			- means you're working on the master branch
+
+	git branch
+		- shows the branches and what branch you're on 
+
+	git branch here-we-go
+
+	git branch
+		- you see that we just made a new brnach called here-we-go, but we're still on the master branch
+
+	git checkout here-we-go
+	git branch
+		- now we're on the branch here-we-go
+
+	- what's the difference between here-we-go and master - nothing - right now
+
+	- update a file on here-we-go, commit it 
+	- checkout master
+	- git log --oneline --graph --all --decorate
+		- you can see the changes on all branches in the repository
+		- notice that the HEAD says master
+
+	git checkout here-we-go
+		git log --oneline --graph --all --decorate
+			- you can see HEAD points at here-we-go
+
+Merging branches
+	in master branch merge here-we-go
+		- git merge here-we-go
+			type "wq" and enter to save and quit this
+
+
+Github.com
+	- watching a repository
+	- forking a repository
+		- we can actually make changes to the repo that you don't own
+	- git cloning a repository
+	- history of project
+	- branches
+	- wiki
+
+Remotes
+	git remote add origin <url>
+	git remote -v 
+		- verifies the git url
+	git remote
+		- you see we have a single remote
+	git branch -a
+		- you see we have two branches
+
+	git push origin master
