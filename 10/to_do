@@ -1,0 +1,65 @@
+Git stuff:
+	- as a class go 
+	
+	- have class do this:
+		- a * indicates that this is not a command you put in the terminal
+
+		0. open up your terminal and go to where you normally code using the following commands: pwd (shows where you are), ls (lists all files and folders), cd <folder name> (moves you to another folder), cd .. (moves you back a folder)
+		1. mkdir git-test
+			- makes a folder named git-test
+		2. git init
+			- initializes a git repository locally on your computer
+		3. touch README.MD
+			- creates a read me file
+		3.5. git status
+			- shows the status of your git repository
+			- it will show that your README.md file is untracked
+		4. *open up your README.MD file and put something in it.
+		5. git status
+			- you should see that your README.md file is still untracked
+		6. git add README.md
+			- this adds the README.md file to the staging area
+			- this is like packaging a product and putting it in the loading dock - you haven't shipped it yet - but you're saying: "It's going to get shipped with the next set of products."
+		7. git status
+			- you should see that your README.md file is now being tracked by git
+		8. git commit -m 'made a README.md file with text in it'
+		9. git remote
+			- you see that we have no remotes
+		10. *In Google Chrome, go to github.com and make a new repository, choose not to initialize it with a README file.
+		11. *copy the repository url for HTTPS for the next step (if you set up your computer for SSH then use the repository url for SSH)
+
+		12. git remote add origin <your repository url>
+			- this creates a remote called "origin" on your computer that connects the git repository on your computer with the git repository on github you just made
+		13. git remote 
+			- you see that we have a single remote
+		14. git remote -v 
+			- this verifies the git url for the remote
+			- you'll see that the git remote you made has a url for fetching and pushing. This is almost always the same.
+		15. git branch
+			- this shows all the branches you have
+			- you currently have the default branch, master
+		16. git push origin master
+			- this pushes your local git commits to where you set your origin remote to (which in this case, will be the github repository you created)
+		17. *In Google Chrome, go to the github repository you made, you should see your README file there.
+
+Quick intro to JS and jQuery:
+	- as a class go over what JavaScript is and what jQuery is.
+	- as a class go over javascript_exercise.html
+		- go over the structure of the page 
+		- go over how the on click works for the night and day buttons
+		- explain what you'd have to do to change the alert to do something else
+
+	- have class do this:
+		1. make it so instead of "Peanut Butter Captain Crunch is amazingly fantastical.", the day button makes the browser alert "KIX were suprisingly good."
+		2. make the day button change the background to yellow
+
+Game stuff:
+	- as a class open game.html in chrome, and go over what makes it tick
+	- as a class go over json and explain where the questions, choices, food, image, image height and width come from
+	- as a class go over how the questions, choices, food, image, image height and width data get used inside the game code
+
+	- have class do this:
+		1. mold out the first three questions and choices, with the pictures, and height, widths of the pictures
+		2. put the questions, choices, pictures, heights, widths in
+		3. test the game in the browser
+		4. visually change how the game is displayed in the browser so it looks nice.

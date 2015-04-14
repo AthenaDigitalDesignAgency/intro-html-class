@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>intro js</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="game.css">
+
+</head>
+<body>
+
+	<h1>Knockout Choose Your Own Adventure Game <small>Made By Me, I and You</small></h1>
+
+	<p>Your Food: <span data-bind="text: activefood"></span></p>
+
+	<div id='question-here'>
+		<img alt="game image" data-bind="attr: { src: activeimage, width: activewidth, height: activeheight }">
+		<p data-bind="text: activequestion"></p>
+
+		<table>
+            <tbody data-bind="foreach: activechoices">
+                <tr>
+                    <td><span data-bind='text: answer' /></td>
+                    <td><a href='#' data-bind='click: $root.nextScene'>Choose</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+	</div>
+
+	<div id="made-by">
+		<p>This was made with Knockout.js 3.3.0, jQuery, CSS, HTML and a little bit of love.</p>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-git2.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+
+	<script src="game.js"></script>
+</body>
+</html>
