@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>intro js</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<style type="text/css">
+
+	</style>
+
+</head>
+<body>
+
+	<div class="row">
+		<div class="col-md-6">
+			<img src="http://i.ytimg.com/vi/pzPxhaYQQK8/hqdefault.jpg" width="400" height="300" alt="pug" id="pug-image">
+
+			<p id="pug-text">This is a pug.</p>
+		</div>
+		<div class="col-md-6">
+			<img src="http://i.huffpost.com/gen/1860407/thumbs/o-BLACK-FOOTED-CAT-KITTENS-facebook.jpg" width="400" height="300" alt="cat" id="cat-image">
+
+			<p id="cat-text">This is a cat.</p>
+		</div>
+	</div>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+	    $('#pug-text').hide();
+
+	    $("#pug-image").on({
+	        mouseenter: function () {
+	            //stuff to do on mouse enter
+	            
+	            $('#pug-text').fadeIn('slow');
+	        },
+	        mouseleave: function () {
+	            //stuff to do on mouse leave
+	            $('#pug-text').fadeOut('slow');
+	      
+	        }
+	    });
+
+
+	</script>
+
+</body>
+</html>

@@ -3,11 +3,12 @@ var sceneData = [
     image : 'http://spousebuzz.com/wp-content/uploads/2013/10/chasing-zombie-570x200.jpg', width: 200, height: 100, food : 0,
     choices: [
         { answer: "Let the guy come inside and try to quickly lock the door", next: 2 },
-        { answer: "Close and bolt the door", next: 3}]
+        { answer: "Close and bolt the door", next: 3}
+        ]
     }, //1
     { question: "The guy's name is Peter. He's a scientist at the CDC and he keeps cursing. You ask him why those people were chasing you and he says that they're not people. They're zombies and they're going to break your door down.", 
     image : 'http://d5eo2qstq4v8a.cloudfront.net/wp-content/uploads/2015/03/doorknocking.jpg',
-    food : 1,
+    food : 10,
     choices: [
         { answer: "Get out the back door", next: 4 },
         { answer: "Reinforce the door", next: 11}

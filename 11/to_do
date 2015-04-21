@@ -1,0 +1,34 @@
+for js-1.html
+	- as a class go over how the pug hover over image works
+	- have the class do the same for the cat image
+
+for js-2.html
+	- as a class go over how the change text and reset text buttons works 
+	- have the class 
+		- make the change text again button add the style-font-different class to the text.
+			- hint: you'll have to remove the "style-font" class before you add the "style-font-different" class
+		- update the "reset text" button so that it resets the text after they click the "change text again" button
+
+for js-3.html
+	- as a class go over how the page works
+	- have the class
+		- hide the call to action on page load
+		- show the call to action when they hover over the paragraph with an id of "hover"
+
+for js-4.html
+	- as a class go over how the buttons should work
+	- have the class make the buttons work
+
+for resumes 
+	skills at the top, projects at the top
+
+	skills: HTML, CSS, Basics of Word Press Theme Editing
+
+	project: customized a choose your own adventure javascript game 
+	details: utilized html, css, json, images
+
+	project: created a choose your own adventure html game
+	details: utilized html, css
+
+	project: customized a wordpress theme 
+	details: utilized wordpress theme knowledge, html, css

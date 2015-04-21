@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>intro js</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+	<style type="text/css">
+		.style-font {
+			color:#174EBD;
+			border: 16px solid #b5a759;
+			letter-spacing:1pt;
+			word-spacing:4pt;
+			font-size:18px;
+			text-align:left;
+			font-family:arial, helvetica, sans-serif;
+			line-height:2;
+		}
+
+		.style-font-different {
+			color:red;
+			line-height:3;
+		}
+
+		#call-to-action {
+			position: fixed;
+			bottom: 0;
+			right: 50px;
+			background: red;
+			padding: 20px;
+			width: 200px;
+			z-index: 1;
+		}
+
+		.height-maximized {
+			height: 250px;
+		}
+
+		.height-minimized {
+			height: 50px;
+		}
+
+		#close {
+			position: absolute;
+			bottom: 0;
+			right: 10px;
+			top: 10px;
+		}
+
+		#min, #max {
+			position: absolute;
+			bottom: 0;
+			right: 30px;
+			top: 10px;
+			font-size:18px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="height-maximized" id="call-to-action">
+		<a href="#" id="max">+</a> <a href="#" id="min">-</a> <a href="#" id="close">X</a>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus purus et turpis laoreet, vitae lobortis risus ornare. Aenean dapibus egestas purus a mattis. Etiam massa velit, facilisis ac luctus vitae, feugiat sit amet dolor. Vestibulum est arcu, porttitor in mauris id, bibendum tincidunt mauris. Mauris elementum nisl eget condimentum sodales. Aenean aliquet augue a turpis egestas vulputate. Cras luctus at mi a efficitur. Nulla at elit in purus dapibus hendrerit vel sit amet justo. In quis dignissim dui. Aliquam aliquet nunc et mauris vestibulum, sit amet condimentum nibh varius. Nullam imperdiet mi eget orci molestie, vitae viverra ante interdum. In sit amet ipsum gravida, rutrum ligula at, dapibus mi. Donec sodales sem nunc, et porta massa pulvinar eu. Quisque quis vehicula velit, vel scelerisque arcu. Mauris sem libero, blandit ut nunc eget, sagittis ornare libero.</p>
+
+			<p>Nullam pretium elit mi. Donec eget tempor nulla. Maecenas efficitur id sapien id ultrices. Nam rhoncus viverra porta. In eu tellus urna. Sed vitae erat eget magna elementum sodales non quis magna. Sed est magna, malesuada sed molestie quis, accumsan et velit. Vivamus in urna quam. Vestibulum aliquet ipsum egestas, mollis nibh eu, dignissim elit. Nam sed quam ac enim tristique pulvinar sed quis sem. Vestibulum non urna varius, finibus massa at, gravida libero. Aliquam quis neque sed odio ornare varius id non turpis. In enim nibh, rhoncus eget dolor sed, faucibus aliquet erat.</p>
+
+			<p>In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In gravida cursus nibh, vitae mattis libero efficitur et. Ut nulla ligula, blandit eu turpis rhoncus, ultricies lacinia nunc. Vivamus sem mauris, malesuada eget ultrices eu, dignissim non mauris. Mauris in eros arcu. Nulla tristique massa dui, sit amet tincidunt nisl scelerisque eu.</p>
+
+			<p>Etiam lobortis, enim quis faucibus tempus, sapien purus feugiat lectus, non aliquam magna lacus vitae nisl. Aliquam consectetur arcu ultricies nisi lobortis auctor. Suspendisse porta accumsan scelerisque. In blandit tempor commodo. Nam rutrum velit elit, a ultrices tellus lobortis at. Pellentesque et dictum tortor, at blandit orci. Pellentesque ut dui cursus, vehicula eros sed, semper ligula.</p>
+
+			<p>Nullam consectetur ante rhoncus tellus rhoncus blandit. Fusce ultrices nunc eu risus egestas semper. Integer velit lorem, dapibus nec enim et, finibus iaculis magna. Suspendisse facilisis ante et blandit vulputate. Praesent eros orci, rhoncus a imperdiet a, laoreet vel nisl. Nulla vulputate tristique ex, semper lacinia ex maximus vitae. Curabitur et tempus massa, sed vestibulum massa.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus purus et turpis laoreet, vitae lobortis risus ornare. Aenean dapibus egestas purus a mattis. Etiam massa velit, facilisis ac luctus vitae, feugiat sit amet dolor. Vestibulum est arcu, porttitor in mauris id, bibendum tincidunt mauris. Mauris elementum nisl eget condimentum sodales. Aenean aliquet augue a turpis egestas vulputate. Cras luctus at mi a efficitur. Nulla at elit in purus dapibus hendrerit vel sit amet justo. In quis dignissim dui. Aliquam aliquet nunc et mauris vestibulum, sit amet condimentum nibh varius. Nullam imperdiet mi eget orci molestie, vitae viverra ante interdum. In sit amet ipsum gravida, rutrum ligula at, dapibus mi. Donec sodales sem nunc, et porta massa pulvinar eu. Quisque quis vehicula velit, vel scelerisque arcu. Mauris sem libero, blandit ut nunc eget, sagittis ornare libero.</p>
+
+			<p>Nullam pretium elit mi. Donec eget tempor nulla. Maecenas efficitur id sapien id ultrices. Nam rhoncus viverra porta. In eu tellus urna. Sed vitae erat eget magna elementum sodales non quis magna. Sed est magna, malesuada sed molestie quis, accumsan et velit. Vivamus in urna quam. Vestibulum aliquet ipsum egestas, mollis nibh eu, dignissim elit. Nam sed quam ac enim tristique pulvinar sed quis sem. Vestibulum non urna varius, finibus massa at, gravida libero. Aliquam quis neque sed odio ornare varius id non turpis. In enim nibh, rhoncus eget dolor sed, faucibus aliquet erat.</p>
+
+			<p>In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In gravida cursus nibh, vitae mattis libero efficitur et. Ut nulla ligula, blandit eu turpis rhoncus, ultricies lacinia nunc. Vivamus sem mauris, malesuada eget ultrices eu, dignissim non mauris. Mauris in eros arcu. Nulla tristique massa dui, sit amet tincidunt nisl scelerisque eu.</p>
+
+			<p id="hover">Stuff Etiam lobortis, enim quis faucibus tempus, sapien purus feugiat lectus, non aliquam magna lacus vitae nisl. Aliquam consectetur arcu ultricies nisi lobortis auctor. Suspendisse porta accumsan scelerisque. In blandit tempor commodo. Nam rutrum velit elit, a ultrices tellus lobortis at. Pellentesque et dictum tortor, at blandit orci. Pellentesque ut dui cursus, vehicula eros sed, semper ligula.</p>
+
+			<p>Nullam consectetur ante rhoncus tellus rhoncus blandit. Fusce ultrices nunc eu risus egestas semper. Integer velit lorem, dapibus nec enim et, finibus iaculis magna. Suspendisse facilisis ante et blandit vulputate. Praesent eros orci, rhoncus a imperdiet a, laoreet vel nisl. Nulla vulputate tristique ex, semper lacinia ex maximus vitae. Curabitur et tempus massa, sed vestibulum massa.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus purus et turpis laoreet, vitae lobortis risus ornare. Aenean dapibus egestas purus a mattis. Etiam massa velit, facilisis ac luctus vitae, feugiat sit amet dolor. Vestibulum est arcu, porttitor in mauris id, bibendum tincidunt mauris. Mauris elementum nisl eget condimentum sodales. Aenean aliquet augue a turpis egestas vulputate. Cras luctus at mi a efficitur. Nulla at elit in purus dapibus hendrerit vel sit amet justo. In quis dignissim dui. Aliquam aliquet nunc et mauris vestibulum, sit amet condimentum nibh varius. Nullam imperdiet mi eget orci molestie, vitae viverra ante interdum. In sit amet ipsum gravida, rutrum ligula at, dapibus mi. Donec sodales sem nunc, et porta massa pulvinar eu. Quisque quis vehicula velit, vel scelerisque arcu. Mauris sem libero, blandit ut nunc eget, sagittis ornare libero.</p>
+
+			<p>Nullam pretium elit mi. Donec eget tempor nulla. Maecenas efficitur id sapien id ultrices. Nam rhoncus viverra porta. In eu tellus urna. Sed vitae erat eget magna elementum sodales non quis magna. Sed est magna, malesuada sed molestie quis, accumsan et velit. Vivamus in urna quam. Vestibulum aliquet ipsum egestas, mollis nibh eu, dignissim elit. Nam sed quam ac enim tristique pulvinar sed quis sem. Vestibulum non urna varius, finibus massa at, gravida libero. Aliquam quis neque sed odio ornare varius id non turpis. In enim nibh, rhoncus eget dolor sed, faucibus aliquet erat.</p>
+
+			<p>In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In gravida cursus nibh, vitae mattis libero efficitur et. Ut nulla ligula, blandit eu turpis rhoncus, ultricies lacinia nunc. Vivamus sem mauris, malesuada eget ultrices eu, dignissim non mauris. Mauris in eros arcu. Nulla tristique massa dui, sit amet tincidunt nisl scelerisque eu.</p>
+
+			<p>Etiam lobortis, enim quis faucibus tempus, sapien purus feugiat lectus, non aliquam magna lacus vitae nisl. Aliquam consectetur arcu ultricies nisi lobortis auctor. Suspendisse porta accumsan scelerisque. In blandit tempor commodo. Nam rutrum velit elit, a ultrices tellus lobortis at. Pellentesque et dictum tortor, at blandit orci. Pellentesque ut dui cursus, vehicula eros sed, semper ligula.</p>
+
+			<p>Nullam consectetur ante rhoncus tellus rhoncus blandit. Fusce ultrices nunc eu risus egestas semper. Integer velit lorem, dapibus nec enim et, finibus iaculis magna. Suspendisse facilisis ante et blandit vulputate. Praesent eros orci, rhoncus a imperdiet a, laoreet vel nisl. Nulla vulputate tristique ex, semper lacinia ex maximus vitae. Curabitur et tempus massa, sed vestibulum massa.</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus purus et turpis laoreet, vitae lobortis risus ornare. Aenean dapibus egestas purus a mattis. Etiam massa velit, facilisis ac luctus vitae, feugiat sit amet dolor. Vestibulum est arcu, porttitor in mauris id, bibendum tincidunt mauris. Mauris elementum nisl eget condimentum sodales. Aenean aliquet augue a turpis egestas vulputate. Cras luctus at mi a efficitur. Nulla at elit in purus dapibus hendrerit vel sit amet justo. In quis dignissim dui. Aliquam aliquet nunc et mauris vestibulum, sit amet condimentum nibh varius. Nullam imperdiet mi eget orci molestie, vitae viverra ante interdum. In sit amet ipsum gravida, rutrum ligula at, dapibus mi. Donec sodales sem nunc, et porta massa pulvinar eu. Quisque quis vehicula velit, vel scelerisque arcu. Mauris sem libero, blandit ut nunc eget, sagittis ornare libero.</p>
+
+			<p>Nullam pretium elit mi. Donec eget tempor nulla. Maecenas efficitur id sapien id ultrices. Nam rhoncus viverra porta. In eu tellus urna. Sed vitae erat eget magna elementum sodales non quis magna. Sed est magna, malesuada sed molestie quis, accumsan et velit. Vivamus in urna quam. Vestibulum aliquet ipsum egestas, mollis nibh eu, dignissim elit. Nam sed quam ac enim tristique pulvinar sed quis sem. Vestibulum non urna varius, finibus massa at, gravida libero. Aliquam quis neque sed odio ornare varius id non turpis. In enim nibh, rhoncus eget dolor sed, faucibus aliquet erat.</p>
+
+			<p>In hac habitasse platea dictumst. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In gravida cursus nibh, vitae mattis libero efficitur et. Ut nulla ligula, blandit eu turpis rhoncus, ultricies lacinia nunc. Vivamus sem mauris, malesuada eget ultrices eu, dignissim non mauris. Mauris in eros arcu. Nulla tristique massa dui, sit amet tincidunt nisl scelerisque eu.</p>
+
+			<p>Etiam lobortis, enim quis faucibus tempus, sapien purus feugiat lectus, non aliquam magna lacus vitae nisl. Aliquam consectetur arcu ultricies nisi lobortis auctor. Suspendisse porta accumsan scelerisque. In blandit tempor commodo. Nam rutrum velit elit, a ultrices tellus lobortis at. Pellentesque et dictum tortor, at blandit orci. Pellentesque ut dui cursus, vehicula eros sed, semper ligula.</p>
+
+			<p>Nullam consectetur ante rhoncus tellus rhoncus blandit. Fusce ultrices nunc eu risus egestas semper. Integer velit lorem, dapibus nec enim et, finibus iaculis magna. Suspendisse facilisis ante et blandit vulputate. Praesent eros orci, rhoncus a imperdiet a, laoreet vel nisl. Nulla vulputate tristique ex, semper lacinia ex maximus vitae. Curabitur et tempus massa, sed vestibulum massa.</p>
+		</div>
+	</div>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+	    $('#max').hide();
+
+	    $("#hover").on({
+	        mouseenter: function () {
+	            //stuff to do on mouse enter
+	            alert('hi');
+	        }
+	    });
+
+	    $('#min').on('click', function(){
+	    	$('#call-to-action').removeClass('height-maximized');
+	    	$('#call-to-action').addClass('height-minimized');
+	    	$('#min').hide();
+	    	$('#max').show();
+
+	    	return false;
+	    })
+
+	    $('#max').on('click', function(){
+	    	$('#call-to-action').removeClass('height-minimized');
+	    	$('#call-to-action').addClass('height-maximized');
+	    	$('#max').hide();
+	    	$('#min').show();
+	    	return false;
+	    })
+
+	    $('#close').on('click', function(){
+	    	$('#call-to-action').hide();
+	    	return false;
+	    })
+
+
+	</script>
+
+</body>
+</html>
